@@ -1,10 +1,22 @@
-# Решите уравнение в натуральных числах 28n+30k+31m=365.
+# s = 'In {0}, someone paid {1} {2} for two pizzas.'
 #
-# Примечание. Используйте вложенный цикл for.
-# В первую очередь запишите решение с наименьшим значением n.
+# print(s.format(2010, '10k', 'Bitcoin'))
+#
+# year = 2010
+# amount = '10K'
+# currency = 'Bitcoin'
+#
+# print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
+#
+#
 
-for n in range(1, 14):
-    for k in range(1, 13):
-        for m in range(1, 12):
-            if 28 * n + 30 * k + 31 * m == 365:
-                print('n =', n, 'k =', k, 'm =', m)
+# a = int(input())
+# b = int(input())
+#
+# for i in range(a, b + 1):
+#     print(chr(i), end=' ')
+
+s = input()
+
+for i in range(len(s)):
+    print(ord(s[i]), end=' ')
